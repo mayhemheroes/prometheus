@@ -1,0 +1,4 @@
+project: prometheus
+target: prometheus-fuzzer
+cmds:
+  - cmd: /fuzz_prometheus -test.fuzz=FuzzParseExprNative -test.fuzzcachedir=/tmp/fuzz
